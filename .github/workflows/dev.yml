@@ -11,7 +11,7 @@ jobs:
               uses: actions/checkout@v4
 
             - name: Go inside the code
-              run: Exercise2
+              run: cd  Exercise2
               
             - name: docker build
               run: docker build -t pipeline:v1 .
