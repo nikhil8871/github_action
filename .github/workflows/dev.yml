@@ -9,7 +9,11 @@ jobs:
         steps:
             - name: code cloning
               uses: actions/checkout@v4
+
             - name: Go inside the code
-              working-directory: Exercise2
+              run: Exercise2
               run: |
                 ls -l
+              
+            - name: docker build
+              run: docker build -t pipeline:v1 .
