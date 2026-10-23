@@ -1,0 +1,13 @@
+name: dev_pipeline
+on: workflow-dispatch
+jobs:
+    first-job:
+        runs-on: ubuntu-latest
+        steps:
+            - name: code cloning
+              uses: actions/checkout@v4
+            - name: Go inside the code
+              run: |
+                cd Exercise2
+                ls -l
+              
