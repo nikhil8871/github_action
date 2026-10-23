@@ -12,8 +12,6 @@ jobs:
 
             - name: Go inside the code
               run: Exercise2
-              run: |
-                ls -l
               
             - name: docker build
               run: docker build -t pipeline:v1 .
